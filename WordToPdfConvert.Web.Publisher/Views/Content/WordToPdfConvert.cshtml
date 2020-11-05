@@ -1,0 +1,31 @@
+﻿@model WordToPdfConvert.Web.Publisher.Models.Content
+@{
+    ViewData["Title"] = "WordToPdfConvert";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+<h4 style="margin-left:30px">Word Dosyasını Pdf Dosyasına Dönüştür</h4>
+<br />
+<div class="container">
+    <div class="row">
+        <form asp-controller="" asp-action="" method="post" enctype="multipart/form-data">
+            <div class="col-md-12">
+                <div class="col-md-4">
+                    <label>Dosya</label>
+                    <input type="file" asp-for="File" class="form-control" />
+                </div>
+
+                <div class="col-md-4">
+                    <label>Email</label>
+                    <input type="text" asp-for="Email" class="form-control" />
+                    
+                </div>
+                <div class="col-md-4">
+                    <br />
+                    <button type="submit" class="btn btn-success">Dönüştür</button>
+                </div>
+            </div>
+        </form>
+    </div> 
+</div>
